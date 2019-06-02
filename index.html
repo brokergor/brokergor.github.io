@@ -31,6 +31,9 @@
             background-size: cover;
             box-sizing: border-box;
         }
+        #home button{
+            font-size: 2.2rem;
+        }
     </style>
 </head>
 
@@ -38,7 +41,7 @@
     <!--<div id="home"></div>-->
     <header class="container-fluid bg-light position-fixed ">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand link" href="#home">
                 <i class="fab fa-bootstrap d-inline-block align-top" style="font-size: 2rem"></i>
                 roker
             </a>
@@ -49,9 +52,6 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Головна</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link link" href="#services">Послуги</a>
                     </li>
@@ -69,20 +69,25 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item link" href="#import">Імпорт</a>
                             <a class="dropdown-item link" href="#export">Експорт</a>
-                            <a class="dropdown-item link" href="#eur1">EUR.1</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item link" href="#about-us">Про нас</a>
+                            <a class="dropdown-item link" href="#eur1">EUR.1</a>
                         </div>
                     </li>
                 </ul>
                 <address class="navbar-nav d-flex flex-column mr-3">
-                    <a href="tel:+380985297221" class="nav-link m-0 p-1"><b>+380985297221</b></a>
-                    <a href="mailto:example@gmail.com" target="_top" class="nav-link m-0 p-1">example@gmail.com</a>
+                    <a href="tel:+380989839276" class="nav-link m-0 p-1"><b>+380989839276</b></a>
+                    <a href="mailto:brokergor@gmail.com" target="_top" class="nav-link m-0 p-1">brokergor@gmail.com</a>
                 </address>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
+            </div>
+            <div class="col-12 d-lg-none">
+                <address class="navbar-nav d-flex d-lg-none flex-column mr-3" id="address-mobile">
+                    <a href="tel:+380989839276" class="nav-link m-0 p-0"><b>+380989839276</b></a>
+                    <a href="mailto:brokergor@gmail.com" target="_top" class="nav-link m-0 p-0">brokergor@gmail.com</a>
+                </address>
             </div>
         </nav>
     </header>
@@ -90,15 +95,16 @@
     <main class="container-fluid">
         <section class="row first-section" id="home">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center align-items-center">
-                <p class="h3 text-center">МИТНЕ ОФОРМЛЕННЯ</p>
+                <h1 class="text-center">МИТНЕ ОФОРМЛЕННЯ</h1>
             </div>
             <div
                 class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-row flex-wrap justify-content-center align-items-start">
-                <button type="button" class="btn btn-light btn-func" value="#export">ЕКСПОРТУ</button>
+                <a href="#export"><button type="button" class="btn btn-light btn-func pr-5 pl-5" value="#export">ЕКСПОРТУ</button></a>
+
             </div>
             <div
                 class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-row flex-wrap justify-content-center align-items-start">
-                <button type="button" class="btn btn-light btn-func" value="#import">ІМПОРТУ</button>
+                <a href="#import"><button type="button" class="btn btn-light btn-func pr-5 pl-5" value="#import">ІМПОРТУ </button></a>
             </div>
         </section>
         <section class="row d-flex flex-row align-items-center justify-content-center" id="services">
@@ -377,12 +383,6 @@
                 </ul>
             </div>
         </section>
-        <section class="row" id="about-us">
-            <div class="col-12">
-                about-us
-            </div>
-        </section>
-
     </main>
 
 
@@ -428,6 +428,22 @@
                 }
             }
         })();
+
+        $(function () {
+            $(".link").click(function (e) {
+                // e.preventDefault();
+                $('.navbar-collapse.show').collapse('hide');
+            });
+
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 10) {
+                    $('#address-mobile').attr('style', 'display: none!important');
+                } else if ($(window).width() <= 575.98) {
+                    $('#address-mobile').attr('style', 'display: flex!important');
+                }
+            });
+        });
     </script>
     <!-- {/literal} END JIVOSITE CODE -->
 </body>
