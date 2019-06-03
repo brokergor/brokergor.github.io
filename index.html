@@ -26,10 +26,14 @@
             text-indent: 1.5rem;
         }
         #home{
+            padding-top: 5rem;
             height: 100vh;
             background: url("images/1s_bgc.jpg");
             background-size: cover;
             box-sizing: border-box;
+        }
+        #home h1{
+            text-shadow: -2px -2px 7px rgb(255, 255, 255);
         }
         #home button{
             font-size: 2.2rem;
@@ -45,7 +49,7 @@
                 <i class="fab fa-bootstrap d-inline-block align-top" style="font-size: 2rem"></i>
                 roker
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button id="menu-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -74,7 +78,7 @@
                         </div>
                     </li>
                 </ul>
-                <address class="navbar-nav d-flex flex-column mr-3">
+                <address id="desktop-menu" class="navbar-nav d-flex flex-column mr-3">
                     <a href="tel:+380989839276" class="nav-link m-0 p-1"><b>+380989839276</b></a>
                     <a href="mailto:brokergor@gmail.com" target="_top" class="nav-link m-0 p-1">brokergor@gmail.com</a>
                 </address>
@@ -108,7 +112,7 @@
             </div>
         </section>
         <section class="row d-flex flex-row align-items-center justify-content-center" id="services">
-            <div class="col-12">
+            <div class="col-12 pb-1 pt-3">
                 <h2>Ми пропонуємо такі види послуг</h2>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -166,7 +170,7 @@
 
         </section>
         <section class="row" id="price">
-            <div class="col-12">
+            <div class="col-12 pb-2 pt-3">
                 <h2>Ціни</h2>
             </div>
             <div class="col-12">
@@ -253,7 +257,7 @@
             </div>
         </section>
         <section class="row" id="contacts">
-            <div class="col-12">
+            <div class="col-12 pb-2 pt-3">
                 <h2>Контакти</h2>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -269,7 +273,7 @@
             </address>
         </section>
         <section class="row" id="import">
-            <div class="col-12">
+            <div class="col-12 pb-2 pt-3">
                 <h2>Імпорт</h2>
             </div>
             <div class="col-12">
@@ -310,7 +314,7 @@
             </div>
         </section>
         <section class="row" id="export">
-            <div class="col-12">
+            <div class="col-12 pb-2 pt-3">
                 <h2>Експорт</h2>
             </div>
             <div class="col-12">
@@ -350,7 +354,7 @@
             </div>
         </section>
         <section class="row" id="eur1">
-            <div class="col-12">
+            <div class="col-12 pb-2 pt-3">
                 <h2>Сертифікати за формою "EUR.1"</h2>
             </div>
             <div class="col-12">
@@ -439,7 +443,10 @@
             $(window).scroll(function () {
                 if ($(window).scrollTop() > 10) {
                     $('#address-mobile').attr('style', 'display: none!important');
-                } else if ($(window).width() <= 575.98) {
+                    $('#desktop-menu').attr('style', 'display: flex!important');
+                } else if ($(window).width() <= 991.98) {
+
+                    $('#desktop-menu').attr('style', 'display: none!important');
                     $('#address-mobile').attr('style', 'display: flex!important');
                 }
             });
