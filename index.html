@@ -31,7 +31,7 @@
         #home {
             padding-top: 6.6rem;
             height: 100vh;
-            background: url("images/1s_bgc.jpg");
+            background: url("images/1s_bgc.webp");
             background-size: cover;
             box-sizing: border-box;
         }
@@ -53,10 +53,10 @@
             text-indent: 1.5rem;
             text-align: justify;
         }
-        #export li, #import li, #eur1 li{
+        #export li, #import li, #eur1 li, #car li{
             list-style-type: none;
         }
-        #export li:before, #import li:before, #eur1 li:before{
+        #export li::before, #import li::before, #eur1 li::before, #car li::before{
             content: url("images/angle-double-right-solid.svg");
             padding-right: .5rem;
             margin-left: -1rem;
@@ -71,7 +71,9 @@
             }
 
             #home button {
-                font-size: 1.8rem;
+                font-size: 1.1rem;
+                width: 14em;
+                padding: .9em 0;
             }
         }
 
@@ -81,7 +83,9 @@
             }
 
             #home button {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
+                width: 19em;
+                padding: .5em 0;
             }
         }
 
@@ -91,7 +95,10 @@
             }
 
             #home button {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
+                height: 5rem;
+                width: 25em;
+                padding: .5em 0;
             }
         }
 
@@ -101,7 +108,10 @@
             }
 
             #home button {
-                font-size: 3.5rem;
+                font-size: 1.5rem;
+                height: 6rem;
+                width: 10em;
+                padding: .5em 0;
             }
         }
 
@@ -111,7 +121,10 @@
             }
 
             #home button {
-                font-size: 3.5rem;
+                font-size: 1.9rem;
+                height: 8rem;
+                width: 11em;
+                padding: .5em 0;
             }
         }
     </style>
@@ -148,6 +161,8 @@
                         Детальніше
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item link d-block d-sm-none" href="#car">Оформлення ТЗ</a>
+                        <a class="dropdown-item link d-none d-sm-block" href="#car">Оформлення транспортних засобів</a>
                         <a class="dropdown-item link" href="#import">Імпорт</a>
                         <a class="dropdown-item link" href="#export">Експорт</a>
                         <div class="dropdown-divider"></div>
@@ -173,7 +188,7 @@
     </nav>
 </header>
 
-<main class="container-fluid">
+<main class="container">
     <section class="row" id="home">
         <div class="col-12 d-flex flex-row justify-content-center align-items-center">
             <div class="row d-flex flex-row align-items-center justify-content-center home">
@@ -181,17 +196,24 @@
                     <h1 class="text-center">МИТНЕ ОФОРМЛЕННЯ</h1>
                 </div>
                 <div
-                        class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-row flex-wrap justify-content-center align-items-start">
+                        class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex flex-row flex-wrap justify-content-center align-items-start">
                     <a href="#export">
-                        <button type="button" class="btn btn-light btn-func pr-5 pl-5 mt-4 mt-md-0" value="#export">ЕКСПОРТУ
+                        <button type="button" class="btn btn-light btn-func" value="#export">ЕКСПОРТУ
                         </button>
                     </a>
 
                 </div>
                 <div
-                        class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-row flex-wrap justify-content-center align-items-start">
+                        class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex flex-row flex-wrap justify-content-center align-items-start">
                     <a href="#import">
-                        <button type="button" class="btn btn-light btn-func pr-5 pl-5 mb-5 mb-md-0" value="#import">ІМПОРТУ
+                        <button type="button" class="btn btn-light btn-func" value="#import">ІМПОРТУ
+                        </button>
+                    </a>
+                </div>
+                <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex flex-row flex-wrap justify-content-center align-items-start">
+                    <a href="#car">
+                        <button type="button" class="btn btn-light btn-func mb-3 mb-lg-0" value="#car">ТРАНСПОРТНИХ ЗАСОБІВ
                         </button>
                     </a>
                 </div>
@@ -209,7 +231,7 @@
         <div class="col-12">
             <dl class="row">
                 <!--row 1-->
-                <dt class="col-12 col-md-4 d-flex flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/1.jpg" alt=""></dt>
+                <dt class="col-12 col-md-4 d-flex flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/1.webp" alt=""></dt>
                 <dd class="col-12 col-md-8 d-flex flex-row align-items-center">Зручне географічне розташування терміналу поблизу західного кордону дає змогу
                     провести митне очищення вантажу в короткі терміни і з меншими витратами (в порівнянні з іншими
                     великими містами України) та дає можливість власнику товару в подальшому реалізовувати його в
@@ -217,14 +239,14 @@
                     ринку.</dd>
 
                 <!--row 2-->
-                <dt class="col-12 col-md-4 d-flex d-md-none flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/2.jpg" alt=""></dt>
+                <dt class="col-12 col-md-4 d-flex d-md-none flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/2.webp" alt=""></dt>
                 <dd class="col-12 col-md-8 d-flex flex-row align-items-center">Маємо багаторічний досвід роботи з різними вантажами: оформляємо хімічні продукти, метали, вироби з пластмаси, промислове та с/г обладнання, овочі та фрукти, меблі, транспортні засоби та ін.</dd>
-                <dt class="col-12 col-md-4 d-md-flex d-none flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/2.jpg" alt=""></dt>
+                <dt class="col-12 col-md-4 d-md-flex d-none flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/2.webp" alt=""></dt>
 
 
 
                 <!--row 3-->
-                <dt class="col-12 col-md-4 d-flex flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/3.jpg" alt=""></dt>
+                <dt class="col-12 col-md-4 d-flex flex-row align-items-center justify-content-center"><img class="img-fluid img-thumbnail" src="images/3.webp" alt=""></dt>
                 <dd class="col-12 col-md-8 d-flex flex-row align-items-center">Звернувшись за митними послугами у нашу компанію Ви отримаєте цілий ряд переваг, які суттєво спростять проходження митниці, що в кінцевому підсумку заощадить ваші нерви, час і кошти.</dd>
             </dl>
         </div>
@@ -341,6 +363,37 @@
             <p>Email: <a href="mailto:brokergor@gmail.com">brokergor@gmail.com</a></p>
         </address>
     </section>
+
+
+    <!-- <section class="row" id="car">
+        <div class="col-12 pb-2 pt-3">
+            <h2>Оформлення транспортних засобів</h2>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="mb-4"><b>Імпорт</b> – це ввезення на територію країни товарів, послуг. У митному відношенні: імпорт - це митний режим, в результаті якого товари з-за кордону випускаються у вільний обіг на території України (без зобов’язання про зворотне вивезення). Окрім випуску у вільний обіг при ввезенні можуть застосовуватися й інші митні режими: реімпорт, тимчасове ввезення, переробка на митній території України тощо.
+                Товари, що імпортуються на територію України, підлягають митному оформленню. Тому імпортеру необхідно здійснити ряд митних формальностей.
+            </p>
+            <h6>Орієнтовна послідовність дій при імпорті товару в Україну:</h6>
+            <ol>
+                <li class="mb-2">визначити економічну доцільність імпорту товару в Україну (вигідно, чи ні), перелік дозвільних документів, митні платежі та збори, інші витрати, які можуть виникнути при ввезенні товару (вартість отримання дозвільних документів, транспортування, брокерські і т.д.);</li>
+                <li class="mb-2">у митному органі стати на облік осіб, які здійснюють операції з товарами;</li>
+                <li class="mb-2">укласти зовнішньоекономічний контракт і перевірити його на відповідність вимогам митного органу і вповноваженого банку;</li>
+                <li class="mb-2">укласти договір про надання транспортно-експедиційних послуг (необхідність залежить від вибраних умов поставки згідно правил ІНКОТЕРМС);</li>
+                <li class="mb-2">встановити код товару згідно УКТЗЕД та розрахувати митну вартість товару;</li>
+                <li class="mb-2">вибрати митний режим та з’ясувати особливості митного оформлення товару для обраного режиму;</li>
+                <li class="mb-2">визначити заходи тарифного і нетарифного регулювання щодо імпортованого товару;</li>
+                <li class="mb-2">розрахувати платежі при імпорті для конкретної партії товару (за необхідності здійснити передоплату на рахунок митного органу);</li>
+                <li class="mb-2">оформити попередню МД та ввезти товар на митну територію України;</li>
+                <li class="mb-2">у випадках встановлених законодавством, пройти процедури контролю інших державних органів;</li>
+                <li class="mb-2">сформувати необхідний пакет документів <i>(перелік документів, які необхідно надати для митного оформлення, в кожному випадку індивідуальний, він залежить від митного коду та специфіки товару)</i>;</li>
+                <li class="mb-2">здійснити митне оформлення товару.</li>
+            </ol>
+        </div>
+    </section> -->
+
+
+
+
     <section class="row" id="import">
         <div class="col-12 pb-2 pt-3">
             <h2>Імпорт</h2>
@@ -394,7 +447,7 @@
         <div class="col-12 pb-2 pt-3">
             <h2>Сертифікати за формою "EUR.1"</h2>
         </div>
-        <div class="col-12">
+        <div class="col-12 text-justify">
             <p><b>Сертифікат з перевезення товару EUR.1</b> – документ, який підтверджує європейське/українське походження товарів і дає право провести митне очищення вантажу з використанням преференційної ставки мита, тим самим знижуючи його вартість для одержувача.</p>
             <h6>Орієнтовна послідовність дій при отриманні сертифікату EUR.1:</h6>
             <p>Перед тим, як оформляти заявку на отримання сертифікату EUR.1, необхідно перевірити, чи такий товар підпадає під відповідну категорію товарів на котрі видається даний сертифікат.</p>
