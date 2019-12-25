@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'San Francisco Pro Display Regular';
+    src: url('./fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display Thin';
+    src: url('./fonts/SFProDisplay-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display Ultra Light';
+    src: url('./fonts/SFProDisplay-Ultralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    font-family: "San Francisco Pro Display Regular";
+    background-color: rgba(0, 0, 0, .8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+body {
+    background: #fafafa;
+}
+
+.header .nav-item a, .header address a{
+    color: rgba(245, 245, 247, .8)!important;
+    transition: .5s;
+}
+
+.header .nav-item a:hover, .header address a:hover {
+    color: rgba(255, 255, 255, 1)!important;
+}
+
+
+.img.home {
+    width: 100%;
+}
+/*col-sm*/
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: .2rem .4rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.15rem;
+        margin-left: .5rem;
+    }
+
+    .navbar address a {
+        font-size: .8rem;
+    }
+
+    .navbar-toggler {
+        padding: .10rem .50rem;
+    }
+    
+    .header .nav-item {
+        border-bottom: 1px solid #424245;
+    }
+    
+    .header .nav-item:nth-last-child(-n+1) {
+        border-bottom: none;
+    }
+    .header .nav-item:first-child {
+        border-top: 1px solid #424245;
+        margin-top: .75rem
+    }
+
+    .header.show {
+        animation-name: navbarMobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .header.hide {
+        animation-name: navbarMobileHide;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .home.top {
+        height: 10vh;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+/*col-md*/
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: .2rem .4rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.15rem;
+        margin-left: .5rem;
+    }
+
+    .navbar address a {
+        font-size: .85rem;
+    }
+
+    .navbar-toggler {
+        padding: .10rem .50rem;
+    }
+    
+    .header .nav-item {
+        border-bottom: 1px solid #424245;
+    }
+    
+    .header .nav-item:nth-last-child(-n+1) {
+        border-bottom: none;
+    }
+    .header .nav-item:first-child {
+        border-top: 1px solid #424245;
+        margin-top: .75rem
+    }
+    
+    .header.show {
+        animation-name: navbarMobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .header.hide {
+        animation-name: navbarMobileHide;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+/*col-lg*/
+@media (max-width: 991.98px) {
+    .navbar address a {
+        font-size: .85rem;
+    }
+}
+
+/*col-xl*/
+@media (max-width: 1199.98px) {
+    .navbar address a {
+        font-size: .85rem;
+    }
+}
+
+/*Animation*/
+
+@keyframes navbarMobile {
+    from {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    to {
+        background-color: #000000;
+    }
+}
+
+@keyframes navbarMobileHide {
+    from {
+        background-color: #000000;
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
