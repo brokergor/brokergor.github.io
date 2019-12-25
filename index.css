@@ -135,6 +135,10 @@ body {
         transform: translate(0, -40%);
         position: relative;
         line-height: 2.6rem;
+        font-size: 2.2rem;
+        margin-top: 32.5vh;
+        transform: translate(0, -50%);
+        position: relative;
     }
 
     .title-heading::after {
