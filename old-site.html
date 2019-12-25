@@ -1,0 +1,609 @@
+<style>
+        header {
+            z-index: 100;
+        }
+
+        main section {
+            padding-top: 4.5rem;
+        }
+
+        main section>div>p {
+            text-indent: 1.5rem;
+        }
+
+        #home {
+            padding-top: 6.6rem;
+            height: 100vh;
+            background: url("images/1s_bgc.jpg");
+            background-size: cover;
+            box-sizing: border-box;
+        }
+
+        .home {
+            height: 70vh;
+            width: 85vw;
+            background-color: rgba(0, 0, 0, 0.33);
+            border-radius: 20px;
+        }
+
+        #home h1 {
+            color: white;
+        }
+
+        #home button {
+            font-size: 2.2rem;
+        }
+
+        #services dd {
+            text-indent: 1.5rem;
+            text-align: justify;
+        }
+
+        #export li.change,
+        #import li.change,
+        #eur1 li,
+        #car li.change {
+            list-style-type: none;
+        }
+
+        #export li.change::before,
+        #import li.change::before,
+        #eur1 li.change::before,
+        #car li.change::before {
+            content: url("images/angle-double-right-solid.svg");
+            padding-right: .5rem;
+            margin-left: -1rem;
+            display: inline-block;
+            width: 1rem;
+
+        }
+
+        @media (max-width: 575.98px) {
+            #home h1 {
+                font-size: 2rem;
+            }
+
+            #home button {
+                font-size: 1.1rem;
+                width: 14em;
+                padding: .9em 0;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            #home h1 {
+                font-size: 3rem;
+            }
+
+            #home button {
+                font-size: 1.5rem;
+                width: 19em;
+                padding: .5em 0;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            #home h1 {
+                font-size: 3.5rem;
+            }
+
+            #home button {
+                font-size: 1.5rem;
+                height: 5rem;
+                width: 25em;
+                padding: .5em 0;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            #home h1 {
+                font-size: 4rem;
+            }
+
+            #home button {
+                font-size: 1.5rem;
+                height: 6rem;
+                width: 17em;
+                padding: .5em 0;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #home h1 {
+                font-size: 4.5rem;
+            }
+
+            #home button {
+                font-size: 1.9rem;
+                height: 8rem;
+                width: 17em;
+                padding: .5em 0;
+            }
+        }
+    </style>
+
+
+
+
+<!--<div id="home"></div>-->
+    <header class="container-fluid bg-light position-fixed ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand link" href="#home">
+                <i class="fab fa-bootstrap d-inline-block align-top" style="font-size: 2rem"></i>
+                roker
+            </a>
+            <button id="menu-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#services">Послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#price">Ціни</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#contacts">Контакти</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Детальніше
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item link d-block d-sm-none" href="#car">Оформлення ТЗ</a>
+                            <a class="dropdown-item link d-none d-sm-block" href="#car">Оформлення транспортних
+                                засобів</a>
+                            <a class="dropdown-item link" href="#import">Імпорт</a>
+                            <a class="dropdown-item link" href="#export">Експорт</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item link" href="#eur1">EUR.1</a>
+                        </div>
+                    </li>
+                </ul>
+                <address id="desktop-menu" class="navbar-nav d-flex flex-column mr-3">
+                    <a href="tel:+380989839276" class="nav-link m-0 p-1"><b>+380989839276</b></a>
+                    <a href="mailto:brokergor@gmail.com" target="_top" class="nav-link m-0 p-1">brokergor@gmail.com</a>
+                </address>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-12 d-lg-none">
+                <address class="navbar-nav d-flex d-lg-none flex-column mr-3" id="address-mobile">
+                    <a href="tel:+380989839276" class="nav-link m-0 p-0"><b>+380989839276</b></a>
+                    <a href="mailto:brokergor@gmail.com" target="_top" class="nav-link m-0 p-0">brokergor@gmail.com</a>
+                </address>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="row" id="home">
+            <div class="col-12 d-flex flex-row justify-content-center align-items-center">
+                <div class="row d-flex flex-row align-items-center justify-content-center home">
+                    <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center align-items-center">
+                        <h1 class="text-center">МИТНЕ ОФОРМЛЕННЯ</h1>
+                    </div>
+                    <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-row flex-wrap justify-content-center align-items-start">
+                        <a href="#export">
+                            <button type="button" class="btn btn-light btn-func" value="#export">ЕКСПОРТУ
+                            </button>
+                        </a>
+
+                    </div>
+                    <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-6 mb-5 mb-lg-0 d-flex flex-row flex-wrap justify-content-center align-items-start">
+                        <a href="#import">
+                            <button type="button" class="btn btn-light btn-func" value="#import">ІМПОРТУ
+                            </button>
+                        </a>
+                    </div>
+                    <!-- <div
+                        class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex flex-row flex-wrap justify-content-center align-items-start">
+                        <a href="#car">
+                            <button type="button" class="btn btn-light btn-func mb-3 mb-lg-0" value="#car">ТРАНСПОРТНИХ
+                                ЗАСОБІВ
+                            </button>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+        </section>
+        <section class="row d-flex flex-row align-items-center justify-content-center" id="services">
+            <div class="col-12 pb-1 pt-3">
+                <h2>Послуги</h2>
+            </div>
+            <div class="col-12 text-center mb-2">
+                <h5>Ми надаємо якісні та швидкі послуги в сфері митно - брокерської діяльності.</h5>
+            </div>
+            <div class="col-12">
+                <dl class="row">
+                    <!--row 1-->
+                    <dt class="col-12 col-md-4 d-flex flex-row align-items-center justify-content-center"><img
+                            class="img-fluid img-thumbnail" src="images/1.jpg" alt=""></dt>
+                    <dd class="col-12 col-md-8 d-flex flex-row align-items-center">Зручне географічне розташування
+                        терміналу поблизу західного кордону дає змогу
+                        провести митне очищення вантажу в короткі терміни і з меншими витратами (в порівнянні з іншими
+                        великими містами України) та дає можливість власнику товару в подальшому реалізовувати його в
+                        будь-якому регіоні України, що збільшує ефективність логістики та конкурентоспроможність фірми
+                        на
+                        ринку.</dd>
+
+                    <!--row 2-->
+                    <dt class="col-12 col-md-4 d-flex d-md-none flex-row align-items-center justify-content-center"><img
+                            class="img-fluid img-thumbnail" src="images/2.jpg" alt=""></dt>
+                    <dd class="col-12 col-md-8 d-flex flex-row align-items-center">Маємо багаторічний досвід роботи з
+                        різними вантажами: оформляємо хімічні продукти, метали, вироби з пластмаси, промислове та с/г
+                        обладнання, овочі та фрукти, меблі, транспортні засоби та ін.</dd>
+                    <dt class="col-12 col-md-4 d-md-flex d-none flex-row align-items-center justify-content-center"><img
+                            class="img-fluid img-thumbnail" src="images/2.jpg" alt=""></dt>
+
+
+
+                    <!--row 3-->
+                    <dt class="col-12 col-md-4 d-flex flex-row align-items-center justify-content-center"><img
+                            class="img-fluid img-thumbnail" src="images/3.jpg" alt=""></dt>
+                    <dd class="col-12 col-md-8 d-flex flex-row align-items-center">Звернувшись за митними послугами у
+                        нашу компанію Ви отримаєте цілий ряд переваг, які суттєво спростять проходження митниці, що в
+                        кінцевому підсумку заощадить ваші нерви, час і кошти.</dd>
+                </dl>
+            </div>
+
+        </section>
+        <section class="row" id="price">
+            <div class="col-12 pb-2 pt-3">
+                <h2>Ціни</h2>
+            </div>
+            <div class="col-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Послуга</th>
+                            <th scope="col">Вартість</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Оформлення ПП основний аркуш</td>
+                            <td>250.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Оформлення ПП додатковий аркуш (за наступний товар)</td>
+                            <td>100.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Оформлення ПД основний аркуш</td>
+                            <td>350.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Оформлення ПД додатковий аркуш (за наступний товар)</td>
+                            <td>100.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Оформлення ІМ основний аркуш МД-2</td>
+                            <td>1500.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Оформлення ІМ додатковий аркуш МД-3</td>
+                            <td>500.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Оформлення ІМ додатковий аркуш МД-6</td>
+                            <td>100.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Оформлення ДМВ</td>
+                            <td>250.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Оформлення ЕК</td>
+                            <td>1500.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Проведення через ЕД-вікно (передбачений вид контролю)</td>
+                            <td>150.00 грн</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Інші послуги згідно Договору</td>
+                            <td class="d-none d-sm-block">за домовленістю</td>
+                            <td class="d-block d-sm-none">за домов- леністю</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">* - вартість послуг не включає обов’язкові митні платежі, оплату рахунків
+                                від інших
+                                контролюючих органів та вартість митного терміналу.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">** - дані ціни є орієнтовними, - залежно від кількості поставок, складності
+                                поставлених завдань та
+                                за умови погодження із Замовником ціни можуть коригуватися, як в більшу так і в меншу
+                                сторони.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                *** - вартість оформлення транспортних засобів за окремою домовленістю.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </section>
+        <section class="row" id="contacts">
+            <div class="col-12 pb-2 pt-3">
+                <h2>Контакти</h2>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10303.245847308439!2d23.69728532231484!3d49.789610362632736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b1db60c30a857%3A0x2cefe1d8099accb9!2z0JzQuNGC0L3QuNC5INC_0L7RgdGCIMKr0JPQvtGA0L7QtNC-0LrCuw!5e0!3m2!1sru!2sua!4v1558466826292!5m2!1sru!2sua"
+                    style="height: 20rem; width: 100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <address class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3 mt-sm-3 mt-md-0 mt-lg-0 mt-xl-0">
+                <h6>Контактна інформація компанії з питань ЗЕД</h6>
+                <p><b>Львівська обл., Городоцький р-н, м. Городок</b></p>
+                <p>ПН-ПТ: 9:00 - 18:00 | СБ, НД : Вихідний</p>
+                <p>Телефон: <a href="tel:+380989839276">+380989839276</a></p>
+                <p>Email: <a href="mailto:brokergor@gmail.com">brokergor@gmail.com</a></p>
+            </address>
+        </section>
+
+
+        <section class="row" id="car">
+            <div class="col-12 pb-2 pt-3">
+                <h2>Оформлення транспортних засобів</h2>
+            </div>
+            <div class="col-12 text-justify">
+                <h6><strong>Орієнтовна послідовність дій при ввезенні транспортного засобу в Україну фізичною
+                        особою:</strong></h6>
+                <ol>
+                    <li class="mb-2 change">необхідно, укласти із продавцем авто договір купівлі-продажу або інший
+                        документ, що його замінює в якому зазначено вартість автомобіля та підтверджується право
+                        власності покупця;</li>
+                    <li class="mb-2 change">зняти автомобіль з обліку в країні реєстрації;</li>
+                    <li class="mb-2 change">оформити експортну декларацію;</li>
+                    <li class="mb-2 change">здійснити передоплату митних платежів на рахунок митного органу в Україні;
+                    </li>
+                    <li class="mb-2 change">оформити попередню митну декларацію для громадян та ввезти автомобіль на
+                        територію України;</li>
+                    <li class="mb-2 change">пройти сертифікацію транспортного засобу;</li>
+                    <li class="mb-2 change">доставити авто у визначений митним органом термін до місця призначення;</li>
+                    <li class="mb-2 change">здійснити митне оформлення автомобіля.</li>
+                </ol>
+                <h6><strong>До митного оформлення подаються наступні документи:</strong></h6>
+                <ol>
+                    <li class="mb-2 change">вантажна митна декларація;</li>
+                    <li class="mb-2 change">договір купівлі-продажу або інший документ, що його замінює;</li>
+                    <li class="mb-2 change">рахунок-фактура (інвойс);</li>
+                    <li class="mb-2 change">техпаспорт транспортного засобу;</li>
+                    <li class="mb-2 change">акт митного огляду, складений при перетині кордону;</li>
+                    <li class="mb-2 change">сертифікат відповідності;</li>
+                    <li class="mb-2 change">висновок експерта про якісні та вартісні характеристики транспортного
+                        засобу;</li>
+                    <li class="mb-2 change">фото автомобіля;</li>
+                    <li class="mb-2 change">паспорт власника авто (закордонний, внутрішній);</li>
+                    <li class="mb-2 change">ІПН власника авто;</li>
+                    <li class="mb-2 change">за наявності, інші документи, що підтверджують вартість автомобіля.</li>
+                </ol>
+                <h5 class="text-danger">ВАЖЛИВО!!!</h5>
+                <p><b>Остаточний розрахунок належних митних платежів здійснюється в день подання вантажної митної
+                        декларації до оформлення.</b></p>
+                <p class="text-danger">Сума, яка була зарезервована за попередньою декларацією для громадян
+                    (передоплата) може відрізнятися
+                    від суми необхідних митних платежів в день митного оформлення:</p>
+                <ol>
+                    <li><u><b>за рахунок коливання курсу валют</b></u> (якщо сплачена сума менша, то необхідно доплатити
+                        кошти яких не вистачає, якщо ця сума більша, то залишок повертається);</li>
+                    <li><u><b>збільшення вартості транспортного засобу для цілей оподаткування</b></u> (якщо митний
+                        орган під час перевірки може аргументовано довести недостовірність заявленої фактурної вартості
+                        автомобіля, то приймає рішення про коригування заявленої вартості і відмовляє в оформленні).
+                    </li>
+                </ol>
+                <p>Наступний крок – постановка автомобіля на облік у сервісному центрі МВС.</p>
+            </div>
+        </section>
+
+
+
+
+        <section class="row" id="import">
+            <div class="col-12 pb-2 pt-3">
+                <h2>Імпорт</h2>
+            </div>
+            <div class="col-12 text-justify">
+                <p class="mb-4"><b>Імпорт</b> – це ввезення на територію країни товарів, послуг. У митному відношенні:
+                    імпорт - це митний режим, в результаті якого товари з-за кордону випускаються у вільний обіг на
+                    території України (без зобов’язання про зворотне вивезення). Окрім випуску у вільний обіг при
+                    ввезенні можуть застосовуватися й інші митні режими: реімпорт, тимчасове ввезення, переробка на
+                    митній території України тощо.
+                    Товари, що імпортуються на територію України, підлягають митному оформленню. Тому імпортеру
+                    необхідно здійснити ряд митних формальностей.
+                </p>
+                <h6><strong>Орієнтовна послідовність дій при імпорті товару в Україну:</strong></h6>
+                <ol>
+                    <li class="mb-2 change">визначити економічну доцільність імпорту товару в Україну (вигідно, чи ні),
+                        перелік дозвільних документів, митні платежі та збори, інші витрати, які можуть виникнути при
+                        ввезенні товару (вартість отримання дозвільних документів, транспортування, брокерські і т.д.);
+                    </li>
+                    <li class="mb-2 change">у митному органі стати на облік осіб, які здійснюють операції з товарами;
+                    </li>
+                    <li class="mb-2 change">укласти зовнішньоекономічний контракт і перевірити його на відповідність
+                        вимогам митного органу і вповноваженого банку;</li>
+                    <li class="mb-2 change">укласти договір про надання транспортно-експедиційних послуг (необхідність
+                        залежить від вибраних умов поставки згідно правил ІНКОТЕРМС);</li>
+                    <li class="mb-2 change">встановити код товару згідно УКТЗЕД та розрахувати митну вартість товару;
+                    </li>
+                    <li class="mb-2 change">вибрати митний режим та з’ясувати особливості митного оформлення товару для
+                        обраного режиму;</li>
+                    <li class="mb-2 change">визначити заходи тарифного і нетарифного регулювання щодо імпортованого
+                        товару;</li>
+                    <li class="mb-2 change">розрахувати платежі при імпорті для конкретної партії товару (за
+                        необхідності здійснити передоплату на рахунок митного органу);</li>
+                    <li class="mb-2 change">оформити попередню МД та ввезти товар на митну територію України;</li>
+                    <li class="mb-2 change">у випадках встановлених законодавством, пройти процедури контролю інших
+                        державних органів;</li>
+                    <li class="mb-2 change">сформувати необхідний пакет документів <i>(перелік документів, які необхідно
+                            надати для митного оформлення, в кожному випадку індивідуальний, він залежить від митного
+                            коду та специфіки товару)</i>;</li>
+                    <li class="mb-2 change">здійснити митне оформлення товару.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="row" id="export">
+            <div class="col-12 pb-2 pt-3">
+                <h2>Експорт</h2>
+            </div>
+            <div class="col-12 text-justify">
+                <p><b>Експорт</b> – це вивезення з митної території країни товарів, послуг без зобов’язань про їх
+                    зворотнє повернення. Окрім випуску у вільний обіг при вивезенні можуть застосовуватися й інші митні
+                    режими: реекспорт, тимчасове вивезення, переробка за межами митної території України тощо.</p>
+                <p class="mb-4">Товари, що експортуються з території України, підлягають митному оформленню. Тому
+                    експортеру необхідно здійснити ряд митних формальностей.</p>
+                <h6><strong>Орієнтовна послідовність дій при експорті товару з України:</strong></h6>
+                <ol>
+                    <li class="mb-2 change">вивчити свого потенційного споживача (попит), проаналізувати законодавчі
+                        вимоги встановлені для експортованого товару в країні, до якої планується експорт, визначити
+                        перелік дозвільних документів, митні платежі та збори <i>(якщо передбачені законодавством)</i>,
+                        інші витрати, які можуть виникнути при вивезенні товару <i>(вартість отримання дозвільних
+                            документів, транспортування, брокерські і т.д.)</i>;</li>
+                    <li class="mb-2 change">у митному органі стати на облік осіб, які здійснюють операції з товарами;
+                    </li>
+                    <li class="mb-2 change">укласти зовнішньоекономічний контракт і перевірити його на відповідність
+                        вимогам митного органу і вповноваженого банку;</li>
+                    <li class="mb-2 change">укласти договір про надання транспортно-експедиційних послуг
+                        <i>(необхідність залежить від вибраних умов поставки згідно правил ІНКОТЕРМС)</i>;</li>
+                    <li class="mb-2 change">встановити код товару згідно УКТЗЕД;</li>
+                    <li class="mb-2 change">вибрати митний режим та з’ясувати особливості митного оформлення товару для
+                        обраного режиму;</li>
+                    <li class="mb-2 change">визначити заходи тарифного і нетарифного регулювання щодо експортованого
+                        товару;</li>
+                    <li class="mb-2 change">у випадках встановлених законодавством, пройти процедури контролю інших
+                        державних органів;</li>
+                    <li class="mb-2 change">надати митному органу дозвіл на проведення експортної операції <i>(якщо це
+                            передбачено законодавством України)</i>;</li>
+                    <li class="mb-2 change">сформувати необхідний пакет документів <i>(перелік документів, які необхідно
+                            надати для митного оформлення, в кожному випадку індивідуальний, він залежить від митного
+                            коду та специфіки товару)</i>;</li>
+                    <li class="mb-2 change">здійснити митне оформлення товару;</li>
+                    <li class="mb-2 change">вивезти товар з території України в установлений термін.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="row" id="eur1">
+            <div class="col-12 pb-2 pt-3">
+                <h2>Сертифікати за формою "EUR.1"</h2>
+            </div>
+            <div class="col-12 text-justify">
+                <p><b>Сертифікат з перевезення товару EUR.1</b> – документ, який підтверджує європейське/українське
+                    походження товарів і дає право провести митне очищення вантажу з використанням преференційної ставки
+                    мита, тим самим знижуючи його вартість для одержувача.</p>
+                <h6><strong>Орієнтовна послідовність дій при отриманні сертифікату EUR.1:</strong></h6>
+                <p>Перед тим, як оформляти заявку на отримання сертифікату EUR.1, необхідно перевірити, чи такий товар
+                    підпадає під відповідну категорію товарів на котрі видається даний сертифікат.</p>
+                <p>Для отримання сертифікату експортер повинен подати митному органу такі документи:</p>
+                <ol>
+                    <li class="mb-2 change">заяву, що містить декларацію від експортера, за формою, визначеною угодами
+                        про вільну торгівлю, та/або її електронну копію;</li>
+                    <li class="mb-2 change">заповнений бланк сертифіката та його електронну копію;</li>
+                    <li class="mb-2 change">документи, що підтверджують преференційне походження товарів з України,
+                        зазначених у сертифікаті при першій поставці таких товарів до країн ЄС або у разі зміни умов
+                        технологічного процесу виробництва товару, що впливає на преференційне походження товарів, які
+                        експортуються з України.</li>
+                </ol>
+                <p>Повний перелік документів, які необхідно надати для отримання сертифікату EUR.1, в кожному випадку
+                    індивідуальний, він залежить від митного коду та способу виробництва товару. Митні органи під час
+                    видачі сертифікату мають право вимагати будь-яких доказів і здійснювати будь-яку перевірку рахунків
+                    експортера та інші перевірки, які вважатимуть належними для встановлення походження товарів.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid bg-light">
+        <div class="row pt-3">
+            <div class="col-12 col-sm-12 col-md-6 pt-2 pb-2 pl-3 pr-3">
+                <h5>Контакти</h5>
+                <p><b>Львівська обл., Городоцький р-н, м. Городок</b></p>
+                <p>ПН-ПТ: 9:00 - 18:00 | СБ, НД : Вихідний</p>
+                <p>Телефон: <a href="tel:+380989839276">+380989839276</a></p>
+                <p>Email: <a href="mailto:brokergor@gmail.com">brokergor@gmail.com</a></p>
+            </div>
+            <div class="navbar navbar-light col-12 col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#home">Головна</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#services">Послуги</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#price">Ціни</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#contacts">Контакти</a></b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#import">Імпорт</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#export">Експорт</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" href="#eur1">EUR.1</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link link p-1" target="_blank"
+                                        href="https://goo.gl/maps/59vAsdyju4nM4BQC8">Прокласти маршрут</a></b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+    <!--integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+    <!--crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <!-- <script src="js/js.js"></script> -->
