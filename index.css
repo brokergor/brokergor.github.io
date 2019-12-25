@@ -130,18 +130,15 @@ body {
     .title-heading {
         z-index: 2;
         font-family: 'ProximaNova-Extrabld';
-<<<<<<< HEAD
         font-size: 2.2rem;
         margin-top: 32.5vh;
         transform: translate(0, -50%);
         position: relative;
-=======
         font-size: 2.8rem;
         margin-top: 32.5vh;
         transform: translate(0, -40%);
         position: relative;
         line-height: 2.6rem;
->>>>>>> development_v2.0.0
     }
 
     .title-heading::after {
