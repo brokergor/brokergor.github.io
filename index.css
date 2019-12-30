@@ -203,6 +203,10 @@ body {
 
     .crystall-1 {
         position: relative;
+<<<<<<< HEAD
+=======
+        z-index: 1;
+>>>>>>> 5ae50d55aaaf465c173ca607672dbda371d0b290
     }
 
     .crystall-1::after {
@@ -213,7 +217,11 @@ body {
         left: 0;
         width: 15vw;
         height: 15vh;
+<<<<<<< HEAD
         z-index: -1;
+=======
+        z-index: 0;
+>>>>>>> 5ae50d55aaaf465c173ca607672dbda371d0b290
     }
 
     .crystall-1::before {
@@ -224,11 +232,19 @@ body {
         left: 0;
         width: 15vw;
         height: 15vh;
+<<<<<<< HEAD
         z-index: 0;
     }
 
     .crystall-1::before, .crystall-1::after {
         animation: 30s cubic-bezier(0.38, 0.38, 0.56, 0.56) 0s infinite reverse both running animateO;
+=======
+        z-index: 2;
+    }
+
+    .crystall-1::before, .crystall-1::after {
+        animation: 30s cubic-bezier(0.38, 0.38, 0.56, 0.56) 1s infinite reverse both running animateO;
+>>>>>>> 5ae50d55aaaf465c173ca607672dbda371d0b290
     }
 }
 
@@ -315,6 +331,7 @@ body {
 
 @keyframes animateO {
     0% {
+<<<<<<< HEAD
         top: 0;
         left: 0;
     }
@@ -322,10 +339,20 @@ body {
     25% {
         top: 50%;
         left: 50%;
+=======
+        top: 100%;
+        left: 0%;
+    }
+
+    25% {
+        top: 100%;
+        left: 100%;
+>>>>>>> 5ae50d55aaaf465c173ca607672dbda371d0b290
     }
 
     50% {
         top: 0%;
+<<<<<<< HEAD
         left: 100%;
     }
 
@@ -337,6 +364,19 @@ body {
     100% {
         top: 0;
         left: 0;
+=======
+        left: 200%;
+    }
+
+    75% {
+        top: -100%;
+        left: 100%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+>>>>>>> 5ae50d55aaaf465c173ca607672dbda371d0b290
     }
     
 }
