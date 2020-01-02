@@ -124,7 +124,7 @@ body {
     }
 
     .home {
-        height: 65vh;
+        height: 50vh;
     }
 
     .title-heading {
@@ -141,19 +141,18 @@ body {
         line-height: 2.6rem;
     }
 
-    .title-heading::after {
+    .home-title-description::after {
         z-index: -1;
         content: '';
         display: block;
         height: 1px;
         width: 1px;
         position: absolute;
-        right: 20%;
-        top: 20%;
-        /* transform: translate(0, -13%); */
+        left: 50%;
+        top: 50%;
         border-radius: 50%;
         background-color: #00000038;
-        box-shadow: 0px 0px 180px 100px #00000038;
+        box-shadow: 0px 0px 135px 90px #00000038;
     }
 
     .home-title-description {
@@ -190,8 +189,8 @@ body {
         height: 1px;
         background: #212529;
         /* left: 0; */
-        right: 0;
-        bottom: 14px;
+        right: -20%;
+        bottom: 20%;
         border-radius: 50%;
         box-shadow: 0px 0px 80px 90px #bd16d9;
     }
