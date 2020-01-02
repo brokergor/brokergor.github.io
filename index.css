@@ -189,10 +189,10 @@ body {
         height: 1px;
         background: #212529;
         /* left: 0; */
-        right: -20%;
+        right: 0;
         bottom: 20%;
         border-radius: 50%;
-        box-shadow: 0px 0px 80px 90px #bd16d9;
+        box-shadow: 0px 0px 80px 90px #bd16d9ad;
     }
 
     .break {
@@ -224,6 +224,32 @@ body {
         height: 35px;
         transform: rotate(-10deg);
         animation: 10s cubic-bezier(0.38, 0.38, 0.56, 0.56) 0s infinite reverse both running animateO;
+    }
+
+    .crystall-2 {
+        position: relative;
+    }
+
+    .crystall-2::after {
+        content: url('./images/polygon-color-R-shape.svg');
+        z-index: 0;
+    }
+
+    .crystall-2::before {
+        content: url('./images/polygon-color-R-line.svg');
+        z-index: -1;
+    }
+
+    .crystall-2::before,
+    .crystall-2::after {
+        display: block;
+        position: absolute;
+        top: -6px;
+        left: -5px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(-10deg);
+        animation: 10s cubic-bezier(0.38, 0.38, 0.56, 0.56) 0s infinite reverse both running animateI;
     }
 }
 
@@ -336,6 +362,29 @@ body {
     100% {
         top: -6px;
         left: -5px;
+        transform: rotate(-20deg);
+    }
+
+}
+
+@keyframes animateI {
+    0% {
+        transform: rotate(-20deg)
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(0deg);
+    }
+
+    100% {
         transform: rotate(-20deg);
     }
 
