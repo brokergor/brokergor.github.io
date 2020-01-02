@@ -207,28 +207,24 @@ body {
 
     .crystall-1::after {
         content: url('./images/polygon-color-E-shape.svg');
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 15vw;
-        height: 15vh;
         z-index: -1;
     }
 
     .crystall-1::before {
         content: url('./images/polygon-color-E-lines.svg');
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 15vw;
-        height: 15vh;
         z-index: 0;
     }
 
-    .crystall-1::before, .crystall-1::after {
-        animation: 30s cubic-bezier(0.38, 0.38, 0.56, 0.56) 0s infinite reverse both running animateO;
+    .crystall-1::before,
+    .crystall-1::after {
+        display: block;
+        position: absolute;
+        top: -6px;
+        left: -5px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(-10deg);
+        animation: 10s cubic-bezier(0.38, 0.38, 0.56, 0.56) 0s infinite reverse both running animateO;
     }
 }
 
@@ -315,28 +311,33 @@ body {
 
 @keyframes animateO {
     0% {
-        top: 0;
-        left: 0;
+        top: -6px;
+        left: -5px;
+        transform: rotate(-20deg)
     }
 
     25% {
-        top: 50%;
-        left: 50%;
+        top: -8px;
+        left: 0px;
+        transform: rotate(0deg);
     }
 
     50% {
-        top: 0%;
-        left: 100%;
+        top: -12px;
+        left: 5px;
+        transform: rotate(20deg);
     }
 
     75% {
-        top: -50%;
-        left: 50%;
+        top: -8px;
+        left: 0px;
+        transform: rotate(0deg);
     }
 
     100% {
-        top: 0;
-        left: 0;
+        top: -6px;
+        left: -5px;
+        transform: rotate(-20deg);
     }
-    
+
 }
