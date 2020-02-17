@@ -1,0 +1,47 @@
+@media (min-width: 992px) {
+     /* HOME */
+
+     .home {
+        height: 40vh;
+        margin-bottom: 0px;
+    }
+
+    .title-heading {
+        font-size: 5.5rem;
+        line-height: 4.4rem;
+        margin-top: 20vh;
+        
+    }
+
+    .home-title-description::after {
+        box-shadow: 0px 0px 135px 185px #00000038
+    }
+
+    .home-title-description {
+        font-size: 1.35rem;
+        width: 300px;
+        right: 30px;
+    }
+
+    .home .wrapper::after {
+        bottom: 76px;
+    }
+
+    .home .wrapper::before {
+        bottom: 120px;
+    }
+
+    .break {
+        
+    }
+
+    .crystall-1::before,
+    .crystall-1::after,
+    .crystall-2::before,
+    .crystall-2::after,
+    .crystall-3::before,
+    .crystall-3::after {
+        width: 60px;
+        height: 60px;
+    }
+}

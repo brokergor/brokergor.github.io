@@ -1,0 +1,82 @@
+@media (min-width: 768px) {
+    .navbar {
+        padding: unset;
+    }
+
+    .navbar-brand {
+        font-size: 1.15rem;
+        padding: 0;
+    }
+
+    .navbar address a {
+        font-size: .8rem;
+    }
+
+    .navbar-toggler {
+        padding: unset;
+    }
+
+    .header .nav-item {
+        border-bottom: unset
+    }
+
+    .header .nav-item:nth-last-child(-n+1) {
+        border-bottom: unset;
+    }
+
+    .header .nav-item:first-child {
+        border-top: unset;
+        margin-top: unset
+    }
+
+    /* HOME */
+
+    /* .home {
+        height: 50vh;
+        margin-bottom: 30px;
+    } */
+
+    .title-heading {
+        font-size: 4.6rem;
+        line-height: 3.8rem;
+        
+    }
+
+    .home-title-description::after {
+        box-shadow: 0px 0px 135px 185px #00000038
+    }
+
+    .home-title-description {
+        font-size: 1.35rem;
+        width: 300px;
+        right: 30px;
+    }
+
+    .home .wrapper::after {
+        width: 250px;
+        height: 250px;
+        bottom: 45px;
+    }
+
+    .home .wrapper::before {
+        z-index: 2;
+        bottom: 100px;
+    }
+
+    .break {
+        
+    }
+
+    .crystall-1::before,
+    .crystall-1::after,
+    .crystall-2::before,
+    .crystall-2::after,
+    .crystall-3::before,
+    .crystall-3::after {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
