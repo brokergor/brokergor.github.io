@@ -1,17 +1,6 @@
 @import 'fonts.css';
 @import 'keyframes.css';
 
-
-
-.header {
-    font-family: "San Francisco Pro Display Regular";
-    background-color: rgba(0, 0, 0, .8);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-
 body {
     background: #fafafa;
 }
@@ -29,6 +18,15 @@ body {
 
 .navbar address a {
     font-size: .8rem;
+}
+
+.header {
+    font-family: "San Francisco Pro Display Regular";
+    background-color: rgba(0, 0, 0, .8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header .nav-item a,
