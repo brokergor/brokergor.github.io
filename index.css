@@ -1,5 +1,4 @@
 @import 'fonts.css';
-@import 'keyframes.css';
 
 body {
     background: #fafafa;
@@ -21,7 +20,7 @@ body {
 }
 
 .header {
-    font-family: "San Francisco Pro Display Regular";
+    font-family: "San Francisco Pro Display Regular"!important;
     background-color: rgba(0, 0, 0, .8);
     position: sticky;
     top: 0;
@@ -29,7 +28,7 @@ body {
     z-index: 100;
 }
 
-.header .nav-item a,
+.header .nav-item a.nav-link,
 .header address a {
     color: rgba(245, 245, 247, .8) !important;
     transition: .5s;
@@ -89,6 +88,36 @@ body {
     }
 }
 
+/* HOME-------------------------------------- */
+.home .img {
+    background-image: url(./images/IMG_0166.JPG);
+    background-color: rgba(33,37,41, .55);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: calc(100vh - 45px);
+    width: 100%;
+}
+
+.home .img:before {
+    content: "";
+    display: block;
+    height: calc(100vh - 45px);
+    width: 100%;
+    background-color: rgba(33,37,41, .55);
+}
+
+.home .img div {
+    font-family: "San Francisco Pro Display Regular"!important;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+}
+
 
 
 
@@ -114,8 +143,6 @@ body {
 }
 
 
-
-/* HOME-------------------------------------- */
 
 
 #services, #price, #contacts, #car, #import, #export, #eur1 {
