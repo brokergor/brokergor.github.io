@@ -109,10 +109,10 @@ body {
 }
 
 .home .img div {
-    font-family: "San Francisco Pro Display Regular"!important;
+    font-family: "San Francisco Pro Display Heavy"!important;
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 20%;
     transform: translateX(-50%);
     text-align: center;
     width: 90%;

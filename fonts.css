@@ -20,50 +20,22 @@
 }
 
 @font-face {
-    font-family: 'ProximaNova-Bold';
-    src: url('./fonts/ProximaNova-Bold.woff') format('woff');
+    font-family: 'San Francisco Pro Display Black';
+    src: url('./fonts/SFProDisplay-Black.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ProximaNova-Extrabld';
-    src: url('./fonts/ProximaNova-Extrabld.woff') format('woff');
+    font-family: 'San Francisco Pro Display Bold';
+    src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url('./fonts/ProximaNova-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ProximaNova-Semibold';
-    src: url('./fonts/ProximaNova-Semibold') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Objective-Regular';
-    src: url('./fonts/Objective-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Objective-Medium';
-    src: url('./fonts/Objective-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Objective-Bold';
-    src: url('./fonts/Objective-Bold.woff2') format('woff2');
+    font-family: 'San Francisco Pro Display Heavy';
+    src: url('./fonts/SFProDisplay-Heavy.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
