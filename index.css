@@ -152,8 +152,11 @@ body {
 }
 
 
-
-
 #services, #price, #contacts, #car, #import, #export, #eur1 {
     font-family: 'San Francisco Pro Display Regular';
 }
+
+#services h2, #price h2, #contacts h2, #car h2, #import h2, #export h2, #eur1 h2 {
+    font-family: 'San Francisco Pro Display Heavy';
+}
+
