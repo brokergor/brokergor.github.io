@@ -54,11 +54,15 @@
                                 aria-label="Toggle navigation">
                                 <a class="nav-link" href="#contacts">Контакти</a>
                             </li>
-                            <li class="nav-item" aria-pressed="true" data-toggle="collapse"
+
+
+                            <!-- <li class="nav-item" aria-pressed="true" data-toggle="collapse"
                                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <a class="nav-link" href="#">Оформлення транспортних засобів</a>
-                            </li>
+                                <a class="nav-link" href="#car">Оформлення транспортних засобів</a>
+                            </li> -->
+
+
                             <li class="nav-item" aria-pressed="true" data-toggle="collapse"
                                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -87,9 +91,9 @@
                             <li class="nav-item" aria-pressed="true">
                                 <a class="nav-link pt-md-1 pb-md-1" href="#contacts">Контакти</a>
                             </li>
-                            <li class="nav-item d-none d-md-block" aria-pressed="true">
+                            <!-- <li class="nav-item d-none d-md-block" aria-pressed="true">
                                 <a class="nav-link pt-md-1 pb-md-1" href="#">Оформлення ТЗ</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item" aria-pressed="true">
                                 <a class="nav-link pt-md-1 pb-md-1" href="#import">Імпорт</a>
                             </li>
@@ -179,9 +183,11 @@
                             <img class="img-fluid mt-2 mb-2 mb-md-0 mt-md-0 border-0" src="images/IMG_0169.JPG" alt="">
                         </dt>
                         <dd class="col-12 col-md-8 mb-md-0 d-flex flex-row align-items-center text-justify">
-                        <article>
-                            Звернувшись за брокерськими послугами у нашу компанію Ви отримаєте цілий ряд переваг, які суттєво спростять проходження митниці, що в кінцевому підсумку заощадить ваші нерви, час і кошти.
-                        </article>
+                            <article>
+                                Звернувшись за брокерськими послугами у нашу компанію Ви отримаєте цілий ряд переваг,
+                                які суттєво спростять проходження митниці, що в кінцевому підсумку заощадить ваші нерви,
+                                час і кошти.
+                            </article>
                         </dd>
                     </dl>
                 </div>
@@ -321,7 +327,8 @@
                     <h2>Оформлення транспортних засобів</h2>
                 </div>
                 <article class="col-12 text-justify">
-                    <h6><strong>Орієнтовна послідовність дій при ввезенні транспортного засобу в Україну фізичною особою:</strong></h6>
+                    <h6><strong>Орієнтовна послідовність дій при ввезенні транспортного засобу в Україну фізичною
+                            особою:</strong></h6>
                     <ol>
                         <li class="mb-2 change">необхідно, укласти із продавцем авто договір купівлі-продажу або інший
                             документ, що його замінює в якому зазначено вартість автомобіля та підтверджується право
@@ -527,15 +534,15 @@
     </main>
 
     <footer class="container-fluid footer">
-        <div class="row pt-3">
-            <div class="col-12 col-sm-12 col-md-6 pt-2 pb-2 pl-3 pr-3 text-light">
+        <div class="row pt-3 pb-5">
+            <div class="col-12 col-sm-7 col-md-6 pt-2 pb-2 pl-3 pr-3 text-light">
                 <h5>Контакти</h5>
                 <p><b>Львівська обл., Городоцький р-н, м. Городок</b></p>
                 <p>ПН-ПТ: 9:00 - 18:00 | СБ, НД : Вихідний</p>
                 <p>Телефон: <a class="text-light" href="tel:+380989839276">+380989839276</a></p>
                 <p>Email: <a class="text-light" href="mailto:brokergor@gmail.com">brokergor@gmail.com</a></p>
             </div>
-            <div class="navbar navbar-dark col-12 col-sm-12 col-md-6">
+            <div class="navbar navbar-dark col-12 col-sm-5 col-md-6 pt-2 pb-2 pl-3 pr-3">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <ul class="navbar-nav mr-auto ">
@@ -556,6 +563,10 @@
                     <div class="col-12 col-md-6">
                         <ul class="navbar-nav mr-auto ">
                             <li class="nav-item">
+                                <b><a class="nav-link p-1" target="_blank"
+                                        href="https://goo.gl/maps/59vAsdyju4nM4BQC8">Прокласти маршрут</a></b>
+                            </li>
+                            <li class="nav-item">
                                 <b><a class="nav-link p-1" href="#import">Імпорт</a></b>
                             </li>
                             <li class="nav-item">
@@ -563,10 +574,6 @@
                             </li>
                             <li class="nav-item">
                                 <b><a class="nav-link p-1" href="#eur1">EUR.1</a></b>
-                            </li>
-                            <li class="nav-item">
-                                <b><a class="nav-link p-1" target="_blank"
-                                        href="https://goo.gl/maps/59vAsdyju4nM4BQC8">Прокласти маршрут</a></b>
                             </li>
                         </ul>
                     </div>
@@ -583,9 +590,8 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -680,6 +686,18 @@
         const openJivoSite = () => {
             jivo_api.open()
         }
+        $(function () {
+            $('.header .nav-link, .header .navbar-brand').each(function (index, element) {
+                $(element).click(function () {
+                    let id = $(this).attr('href');
+                    let top = $(id).offset().top - 300;
+                    $('html').animate({
+                        scrollTop: top
+                    }, 1400);
+                })
+            });
+        })
+
     </script>
 </body>
 
