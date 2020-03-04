@@ -18,7 +18,229 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" />
+    <style>
+        @font-face {
+            font-family: 'San Francisco Pro Display Regular';
+            src: url('./fonts/SFProDisplay-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'San Francisco Pro Display Thin';
+            src: url('./fonts/SFProDisplay-Thin.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'San Francisco Pro Display Ultra Light';
+            src: url('./fonts/SFProDisplay-Ultralight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'San Francisco Pro Display Black';
+            src: url('./fonts/SFProDisplay-Black.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'San Francisco Pro Display Bold';
+            src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'San Francisco Pro Display Heavy';
+            src: url('./fonts/SFProDisplay-Heavy.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        body {
+            background: #fafafa;
+        }
+
+        /* HEADER------------------------------------ */
+
+        .navbar {
+            padding: .2rem .4rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.15rem;
+            margin-left: .5rem;
+        }
+
+        .navbar address a {
+            font-size: .8rem;
+        }
+
+        .header {
+            font-family: "San Francisco Pro Display Regular" !important;
+            background-color: rgba(0, 0, 0, .8);
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .header .nav-item a.nav-link,
+        .header address a {
+            color: rgba(245, 245, 247, .8) !important;
+            transition: .5s;
+        }
+
+        .header .nav-item a:hover,
+        .header address a:hover {
+            color: rgba(255, 255, 255, 1) !important;
+        }
+
+        .navbar-toggler {
+            padding: .10rem .50rem;
+        }
+
+        .header .nav-item {
+            border-bottom: 1px solid #424245;
+        }
+
+        .header .nav-item:nth-last-child(-n+1) {
+            border-bottom: none;
+        }
+
+        .header .nav-item:first-child {
+            border-top: 1px solid #424245;
+            margin-top: .75rem
+        }
+
+        .header.show {
+            animation-name: navbarMobile;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .header.hide {
+            animation-name: navbarMobileHide;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes navbarMobile {
+            from {
+                background-color: rgba(0, 0, 0, .8);
+            }
+
+            to {
+                background-color: #000000;
+            }
+        }
+
+        @keyframes navbarMobileHide {
+            from {
+                background-color: #000000;
+            }
+
+            to {
+                background-color: rgba(0, 0, 0, .8);
+            }
+        }
+
+        /* HOME-------------------------------------- */
+        .home .img {
+            background-image: url(./images/IMG_0166.JPG);
+            background-color: rgba(33, 37, 41, .55);
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: calc(100vh - 45px);
+            width: 100%;
+        }
+
+        .home .img:before {
+            content: "";
+            display: block;
+            height: calc(100vh - 45px);
+            width: 100%;
+            background-color: rgba(33, 37, 41, .55);
+        }
+
+        .home .img div {
+            font-family: "San Francisco Pro Display Heavy" !important;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 90%;
+        }
+
+        .footer {
+            font-family: "San Francisco Pro Display Regular" !important;
+            background-color: rgba(0, 0, 0, .8) !important;
+        }
+
+        .footer .navbar a {
+            white-space: nowrap;
+        }
+
+        #services,
+        #price,
+        #contacts,
+        #car,
+        #import,
+        #export,
+        #eur1 {
+            font-family: 'San Francisco Pro Display Regular';
+            font-size: .9rem;
+        }
+
+        #services h2,
+        #price h2,
+        #contacts h2,
+        #car h2,
+        #import h2,
+        #export h2,
+        #eur1 h2 {
+            font-family: 'San Francisco Pro Display Heavy';
+        }
+
+        @media (min-width: 576px) {
+
+            #services,
+            #price,
+            #contacts,
+            #car,
+            #import,
+            #export,
+            #eur1 {
+                font-family: 'San Francisco Pro Display Regular';
+                font-size: unset;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            /* HEADER------------------------------------ */
+            .header .nav-item {
+                border-bottom: none;
+            }
+
+            .header .nav-item:first-child {
+                border-top: none;
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width: 992px) {}
+
+        @media (min-width: 1200px) {}
+    </style>
     <title>Митний брокер</title>
 </head>
 
@@ -56,11 +278,11 @@
                             </li>
 
 
-                            <!-- <li class="nav-item" aria-pressed="true" data-toggle="collapse"
+                            <li class="nav-item" aria-pressed="true" data-toggle="collapse"
                                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                                 aria-label="Toggle navigation">
                                 <a class="nav-link" href="#car">Оформлення транспортних засобів</a>
-                            </li> -->
+                            </li>
 
 
                             <li class="nav-item" aria-pressed="true" data-toggle="collapse"
@@ -91,9 +313,9 @@
                             <li class="nav-item" aria-pressed="true">
                                 <a class="nav-link pt-md-1 pb-md-1" href="#contacts">Контакти</a>
                             </li>
-                            <!-- <li class="nav-item d-none d-md-block" aria-pressed="true">
-                                <a class="nav-link pt-md-1 pb-md-1" href="#">Оформлення ТЗ</a>
-                            </li> -->
+                            <li class="nav-item d-none d-md-block" aria-pressed="true">
+                                <a class="nav-link pt-md-1 pb-md-1" href="#car">Оформлення ТЗ</a>
+                            </li>
                             <li class="nav-item" aria-pressed="true">
                                 <a class="nav-link pt-md-1 pb-md-1" href="#import">Імпорт</a>
                             </li>
@@ -137,8 +359,8 @@
         </section>
 
 
-        <section class="container">
-            <div class="row d-flex flex-row align-items-center justify-content-center" id="services">
+        <section class="container" id="services">
+            <div class="row d-flex flex-row align-items-center justify-content-center">
                 <div class="col-12 pb-1 pt-3">
                     <h2>Послуги</h2>
                 </div>
@@ -154,7 +376,7 @@
                         <dd class="col-12 col-md-8 mb-md-0 d-flex flex-row align-items-center text-justify">
                             <article>
                                 Зручне географічне розташування терміналу поблизу західного кордону дає змогу провести
-                                митне очищення вантажу в короткі терміни і з меншими витратами (в порівнянні з іншими
+                                митне очищення вантажу в короткі терміни із меншими витратами (в порівнянні з іншими
                                 великими містами України) та дає можливість власнику товару в подальшому реалізовувати
                                 його в будь-якому регіоні України, що збільшує ефективність логістики та
                                 конкурентоспроможність фірми на ринку.
@@ -215,53 +437,33 @@
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Оформлення ПП основний аркуш</td>
-                                <td>250.00 грн</td>
+                                <td>Оформлення ІМ основний аркуш МД-2</td>
+                                <td>1500.00 грн.</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Оформлення ПП додатковий аркуш (за наступний товар)</td>
-                                <td>100.00 грн</td>
+                                <td>Оформлення ІМ додатковий аркуш МД-3</td>
+                                <td>500.00 грн.</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Оформлення ПД основний аркуш</td>
-                                <td>350.00 грн</td>
+                                <td>Оформлення ДМВ</td>
+                                <td>300.00 грн.</td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
-                                <td>Оформлення ПД додатковий аркуш (за наступний товар)</td>
-                                <td>100.00 грн</td>
+                                <td>Оформлення ЕК</td>
+                                <td>1500.00 грн.</td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
-                                <td>Оформлення ІМ основний аркуш МД-2</td>
-                                <td>1500.00 грн</td>
+                                <td>Проведення через ЕД-вікно (передбачений вид контролю)</td>
+                                <td>150.00 грн.</td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
-                                <td>Оформлення ІМ додатковий аркуш МД-3</td>
-                                <td>500.00 грн</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>Оформлення ІМ додатковий аркуш МД-6</td>
-                                <td>100.00 грн</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>Оформлення ДМВ</td>
-                                <td>250.00 грн</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Оформлення ЕК</td>
-                                <td>1500.00 грн</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Проведення через ЕД-вікно (передбачений вид контролю)</td>
-                                <td>150.00 грн</td>
+                                <td>Виготовлення сертифікату EUR.1</td>
+                                <td>500.00 грн.</td>
                             </tr>
                             <tr>
                                 <th scope="row">11</th>
@@ -331,13 +533,18 @@
                             особою:</strong></h6>
                     <ol>
                         <li class="mb-2 change">необхідно, укласти із продавцем авто договір купівлі-продажу або інший
-                            документ, що його замінює в якому зазначено вартість автомобіля та підтверджується право
-                            власності покупця;</li>
+                            документ (купча) в якому зазначено:
+                            <ul>
+                                <li>- дані авто (марка, модель, рік випуску, № кузова, тощо);</li>
+                                <li>- вартість;</li>
+                                <li>- країна походження;</li>
+                                <li>- інше.</li>
+                            </ul>
+                        </li>
                         <li class="mb-2 change">зняти автомобіль з обліку в країні реєстрації;</li>
                         <li class="mb-2 change">оформити експортну декларацію;</li>
-                        <li class="mb-2 change">здійснити передоплату митних платежів на рахунок митного органу в
-                            Україні;
-                        </li>
+                        <li class="mb-2 change">внести передоплату митних платежів на рахунок митного органу в Україні
+                            (оплата здійснюється від імені Отримувача автомобіля);</li>
                         <li class="mb-2 change">оформити попередню митну декларацію для громадян та ввезти автомобіль на
                             територію України;</li>
                         <li class="mb-2 change">пройти сертифікацію транспортного засобу;</li>
@@ -348,7 +555,7 @@
                     <h6><strong>До митного оформлення подаються наступні документи:</strong></h6>
                     <ol>
                         <li class="mb-2 change">вантажна митна декларація;</li>
-                        <li class="mb-2 change">договір купівлі-продажу або інший документ, що його замінює;</li>
+                        <li class="mb-2 change">договір купівлі-продажу або інший документ (купча);</li>
                         <li class="mb-2 change">рахунок-фактура (інвойс);</li>
                         <li class="mb-2 change">техпаспорт транспортного засобу;</li>
                         <li class="mb-2 change">акт митного огляду, складений при перетині кордону;</li>
@@ -539,8 +746,8 @@
                 <h5>Контакти</h5>
                 <p><b>Львівська обл., Городоцький р-н, м. Городок</b></p>
                 <p>ПН-ПТ: 9:00 - 18:00 | СБ, НД : Вихідний</p>
-                <p>Телефон: <a class="text-light" href="tel:+380989839276">+380989839276</a></p>
-                <p>Email: <a class="text-light" href="mailto:brokergor@gmail.com">brokergor@gmail.com</a></p>
+                <p>Телефон: <a class="text-light" href="tel:+380989839276"><b>+380989839276</b></a></p>
+                <p>Email: <a class="text-light" href="mailto:brokergor@gmail.com"><b>brokergor@gmail.com</b></a></p>
             </div>
             <div class="navbar navbar-dark col-12 col-sm-5 col-md-6 pt-2 pb-2 pl-3 pr-3">
                 <div class="row">
@@ -686,14 +893,18 @@
         const openJivoSite = () => {
             jivo_api.open()
         }
+
         $(function () {
-            $('.header .nav-link, .header .navbar-brand').each(function (index, element) {
+            $('.header .nav-link, .header .navbar-brand, .footer .nav-link').each(function (index, element) {
                 $(element).click(function () {
                     let id = $(this).attr('href');
-                    let top = $(id).offset().top - 300;
+                    let top =
+                        $(window).width() < 768 ?
+                            $(id).offset().top - 350 :
+                            $(id).offset().top - 50;
                     $('html').animate({
                         scrollTop: top
-                    }, 1400);
+                    }, 1000);
                 })
             });
         })
